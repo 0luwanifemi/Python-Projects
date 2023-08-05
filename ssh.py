@@ -14,7 +14,7 @@ def banner():
 	    
 	   ================================================
 	   [+] Usage:
-	   python3 ssh-brute.py <username> <host> <port> <wordlist>
+	   python3 ssh.py <username> <host> <port> <wordlist>
 	   
 	   [!] NOTE: 
 	   Default port is 22
@@ -78,7 +78,7 @@ def ssh_brute_force(host, port, username, password_list_path):
 
 def main():
 	if len(sys.argv) < 5:
-		print("Usage: python3 ssh-brute.py <username> <host> <port> <wordlist>")
+		print("Usage: python3 ssh.py <username> <host> <port> <wordlist>")
 		sys.exit(1)
 	else:
 		banner()
